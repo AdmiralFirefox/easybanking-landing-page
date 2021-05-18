@@ -1,0 +1,19 @@
+.card-content-compile-wrapper {
+  background: hsl(220, 16%, 96%);
+  width: 100%;
+  margin-top: 5em;
+  padding: 2.8em;
+}
+
+@media (min-width: 48.0625em) {
+  .card-content-compile-wrapper {
+    margin-top: -10.8em;
+    padding: 4.5em;
+  }
+}
+
+@media (min-width: 62.5em) {
+  .card-content-compile-wrapper {
+    margin-top: -14.35em;
+  }
+}

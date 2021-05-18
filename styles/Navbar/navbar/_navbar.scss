@@ -1,0 +1,113 @@
+/* Mobile View */
+
+.app-bar {
+  position: fixed; //Either Fixed or Relative
+  width: 100%;
+  /* Change the background of the app-bar */
+  background: #fff;
+  z-index: 100;
+}
+
+.app-bar-content {
+  display: flex;
+  align-items: center;
+  padding: 0.3em;
+
+  /* Web Title*/
+
+  img {
+    margin-left: 0.5em;
+  }
+}
+
+.app-bar-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hamburger Icon */
+
+.nav_ham {
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 0.1em;
+  transition: color 0.25s ease-in-out;
+
+  &:hover {
+    color: hsl(136, 65%, 51%);
+  }
+}
+
+/* Desktop View  */
+
+.app-bar-desktop-wrapper {
+  position: fixed; //Either Fixed or Relative
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; //Space Between the Company Name and Navlinks
+  //Change App Bar background for desktop
+  background: #fff;
+  padding: 1em;
+}
+
+.desktop-web-name {
+  h1 {
+    color: #000;
+  }
+}
+
+.desktop-navlinks {
+  display: flex;
+  align-items: center;
+
+  a {
+    text-decoration: none;
+    color: hsl(233, 8%, 62%);
+    font-weight: 700;
+    font-family: "Public Sans", sans-serif;
+    transition: color 0.4s ease-in-out;
+  }
+
+  a:hover {
+    color: #000;
+  }
+
+  a::after {
+    content: "";
+    background: hsl(136, 65%, 51%);
+    width: 0%;
+    height: 0.32em;
+    display: block;
+    position: relative;
+    top: 1.35em;
+    transition: width 0.4s ease-in-out;
+  }
+
+  a:hover::after {
+    width: 100%;
+  }
+
+  div {
+    margin-right: 1em; //Space Between Navlinks
+    margin-left: 1em; //Space Between Navlinks
+  }
+}
+
+.desktop-button {
+  background: #dce35b; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #45b649,
+    #dce35b
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #45b649,
+    #dce35b
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Public Sans", sans-serif;
+}

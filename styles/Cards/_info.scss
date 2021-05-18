@@ -1,0 +1,39 @@
+.info-wrapper {
+  width: 100%;
+}
+
+.info-content {
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-family: "Public Sans", sans-serif;
+    font-size: clamp(1.6rem, 4vw, 2.7rem);
+  }
+
+  p {
+    font-family: "Public Sans", sans-serif;
+    color: hsl(233, 8%, 62%);
+    margin-top: 1.5em;
+    width: min(100%, 25em);
+  }
+}
+
+@media (min-width: 48.0625em) {
+  .info-content {
+    text-align: left;
+    align-items: flex-start;
+
+    h2 {
+      font-size: clamp(1.7rem, 3vw, 2.5rem);
+    }
+
+    p {
+      margin-top: 1.5em;
+      width: min(60%, 36em);
+    }
+  }
+}

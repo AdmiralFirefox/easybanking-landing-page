@@ -1,0 +1,208 @@
+/* Mobile View */
+.app-bar {
+  position: fixed;
+  width: 100%;
+  /* Change the background of the app-bar */
+  background: #fff;
+  z-index: 100;
+}
+
+.app-bar-content {
+  display: flex;
+  align-items: center;
+  padding: 0.3em;
+  /* Web Title*/
+}
+.app-bar-content img {
+  margin-left: 0.5em;
+}
+
+.app-bar-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Hamburger Icon */
+.nav_ham {
+  color: #000;
+  font-size: 2rem;
+  cursor: pointer;
+  margin-right: 0.1em;
+  transition: color 0.25s ease-in-out;
+}
+.nav_ham:hover {
+  color: #31d35c;
+}
+
+/* Desktop View  */
+.app-bar-desktop-wrapper {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  padding: 1em;
+}
+
+.desktop-web-name h1 {
+  color: #000;
+}
+
+.desktop-navlinks {
+  display: flex;
+  align-items: center;
+}
+.desktop-navlinks a {
+  text-decoration: none;
+  color: #9698a6;
+  font-weight: 700;
+  font-family: "Public Sans", sans-serif;
+  transition: color 0.4s ease-in-out;
+}
+.desktop-navlinks a:hover {
+  color: #000;
+}
+.desktop-navlinks a::after {
+  content: "";
+  background: #31d35c;
+  width: 0%;
+  height: 0.32em;
+  display: block;
+  position: relative;
+  top: 1.35em;
+  transition: width 0.4s ease-in-out;
+}
+.desktop-navlinks a:hover::after {
+  width: 100%;
+}
+.desktop-navlinks div {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.desktop-button {
+  background: #dce35b;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #45b649, #dce35b);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #45b649, #dce35b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Public Sans", sans-serif;
+}
+
+.back-drop {
+  /* You can set the color with or none */
+  background: rgba(0, 0, 0, 0.253);
+  position: fixed;
+  height: 100%;
+  /* The backdrop shadow when the sidebar is active*/
+  width: 100%;
+  z-index: 90;
+  transition: all 0.45s ease-in-out;
+}
+
+.navbar-wrapper {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 4.5em;
+  z-index: 99;
+  width: 100%;
+  transition: all 0.45s ease-in-out;
+  /* Animation of sidebar in and out */
+}
+
+.navbar-content {
+  background: #fff;
+  /* Background color of the sidebar */
+  position: fixed;
+  width: 70%;
+  /* How long your sidebar you want */
+  top: 0;
+  height: min(70vh, 21em);
+  box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253);
+  overflow: auto;
+}
+
+.nav_components {
+  display: flex;
+  justify-content: center;
+  /* For Nav Links excluding the dropdowns */
+  align-items: center;
+  flex-direction: column;
+}
+.nav_components a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  /* Determines the position of your nav links */
+  align-items: center;
+  line-height: 4rem;
+  transition: background-color 0.6s ease;
+  user-select: none;
+  font-family: "Public Sans", sans-serif;
+  transition: color background-color 0.4s ease-in-out;
+}
+.nav_components a:hover {
+  color: #fff;
+  background: #31d35c;
+}
+
+/* Button */
+.mobile_button_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+}
+.mobile_button_wrapper a:hover {
+  background: none;
+}
+
+.mobile_button {
+  background: none;
+  border: 3px solid black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0.3em;
+  border-radius: 10px;
+  transition: background-color 0.6s ease;
+  /* Adjust the with of the button */
+}
+.mobile_button:focus {
+  outline: none !important;
+}
+.mobile_button:hover {
+  background: #555;
+  color: white;
+}
+
+html,
+body {
+  background: #fafafa;
+  overflow-x: hidden;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*# sourceMappingURL=globals.css.map */

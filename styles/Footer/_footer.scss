@@ -1,0 +1,117 @@
+.footer-wrapper {
+  width: 100%;
+}
+
+.footer-content {
+  background: hsl(233, 26%, 24%);
+  padding: 2.75em;
+
+  .web-logo-social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    div:first-child {
+      img {
+        width: 9.8em;
+        margin-right: 0.95em;
+      }
+    }
+
+    .social-links {
+      display: flex;
+      margin-top: 1.5em;
+      color: #fff;
+
+      & > * {
+        margin-right: 0.35em;
+        margin-left: 0.35em;
+        font-size: 1.6rem;
+        transition: color 0.25s ease-in-out;
+      }
+
+      & > *:hover {
+        color: hsl(136, 65%, 51%);
+      }
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
+    color: #fff;
+    line-height: 2.3em;
+    font-family: "Public Sans", sans-serif;
+
+    & > * > * {
+      transition: color 0.25s ease-in-out;
+    }
+
+    & > * > *:hover {
+      color: hsl(136, 65%, 51%);
+    }
+  }
+
+  .button-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    div:first-child {
+      .footer-button {
+        color: #fff;
+        border-radius: 20px;
+        font-weight: bold;
+        padding: 0.65em 2em;
+        background: #dce35b; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to left,
+          #45b649,
+          #dce35b
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to left,
+          #45b649,
+          #dce35b
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        font-family: "Public Sans", sans-serif;
+      }
+    }
+
+    div:nth-child(2) {
+      margin-top: 1.5em;
+      color: hsl(233, 8%, 62%);
+      font-family: "Public Sans", sans-serif;
+    }
+  }
+}
+
+@media (min-width: 51.5em) {
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+
+    .footer-links {
+      flex-direction: row;
+      text-align: left;
+      margin-top: 0em;
+      margin-bottom: 0em;
+
+      & > * {
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+      }
+    }
+
+    .button-copyright {
+      align-items: flex-end;
+    }
+  }
+}

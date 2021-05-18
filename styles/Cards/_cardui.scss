@@ -1,0 +1,35 @@
+.card-ui-wrapper {
+  width: 100%;
+}
+
+.card-ui-content {
+  background: none;
+  padding: 1.35em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h2 {
+    margin-top: 1.3em;
+    font-family: "Public Sans", sans-serif;
+  }
+
+  p {
+    margin-top: 1.3em;
+    color: hsl(233, 8%, 62%);
+    font-family: "Public Sans", sans-serif;
+    width: min(80%, 23em);
+  }
+}
+
+@media (min-width: 36.625em) {
+  .card-ui-content {
+    align-items: flex-start;
+    text-align: left;
+
+    p {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.article-content-wrapper {
+  width: 100%;
+  margin-top: 1em;
+  padding: 4.5em;
+
+  .article-content-title {
+    h1 {
+      font-family: "Public Sans", sans-serif;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 41.375em) {
+  .article-content-wrapper {
+    .article-content-title {
+      h1 {
+        text-align: left;
+      }
+    }
+  }
+}

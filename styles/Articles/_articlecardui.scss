@@ -1,0 +1,47 @@
+.article-card-ui-wrapper {
+  background: #fff;
+
+  div:first-child {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      transform: scale(1.25);
+      transition: transform 0.45s ease-in-out;
+
+      &:hover {
+        transform: scale(1.9);
+      }
+    }
+  }
+
+  div:nth-child(2) {
+    margin-left: 0.25em;
+    padding: 1.35em;
+
+    .article-author {
+      font-family: "Public Sans", sans-serif;
+      color: hsl(233, 8%, 62%);
+      font-size: clamp(0.75rem, 2vw, 0.9rem);
+    }
+
+    .article-title {
+      margin-top: 0.7em;
+      font-family: "Public Sans", sans-serif;
+      font-size: clamp(0.9rem, 3.5vw, 1.35rem);
+      transition: color 0.2s ease-in-out;
+
+      &:hover {
+        color: hsl(136, 65%, 51%);
+      }
+    }
+
+    .article-description {
+      margin-top: 1.2em;
+      font-family: "Public Sans", sans-serif;
+      font-size: clamp(0.75rem, 2vw, 0.9rem);
+      line-height: 1.45em;
+      color: hsl(233, 8%, 62%);
+    }
+  }
+}
