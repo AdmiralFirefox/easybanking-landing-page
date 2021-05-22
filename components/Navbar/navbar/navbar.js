@@ -16,12 +16,12 @@ const SignInButton = withStyles(() => ({
 }))(Button);
 
 const Desktop = ({ children }) => {
-  const isDesktop = useMediaQuery({ minWidth: 769 });
+  const isDesktop = useMediaQuery({ minWidth: 767 });
   return isDesktop ? children : null;
 };
 
 const Mobile = ({ children }) => {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isMobile = useMediaQuery({ maxWidth: 766 });
   return isMobile ? children : null;
 };
 
